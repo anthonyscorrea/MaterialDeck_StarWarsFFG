@@ -1,0 +1,1 @@
+This module adds support for 'Star Wars FFG' to [Material Deck](https://github.com/MaterialFoundry/MaterialDeck).
