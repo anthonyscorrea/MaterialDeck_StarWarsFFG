@@ -2,8 +2,12 @@
     "id": "materialdeck-starwarsffg",
     "title": "Material Deck - Star Wars FFG",
     "description": "This module adds support for 'Star Wars FFG' to Material Deck.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "authors": [
+        {
+            "name": "anthonyscorrea",
+            "url": "https://github.com/anthonyscorrea"
+        },
         {
             "name": "CDeenen",
             "email": "info@materialfoundry.nl",
@@ -32,6 +36,6 @@
     },
     "manifestPlusVersion": "1.1.0",
     "url": "https://github.com/MaterialFoundry/MaterialDeck_StarWarsFFG",
-    "manifest": "https://github.com/MaterialFoundry/MaterialDeck_StarWarsFFG/releases/latest/download/module.json",
-    "download": "https://github.com/MaterialFoundry/MaterialDeck_StarWarsFFG/releases/download/v1.0.1/module.zip"
+    "manifest": "https://github.com/anthonyscorrea/MaterialDeck_StarWarsFFG/releases/latest/download/module.json",
+    "download": "https://github.com/anthonyscorrea/MaterialDeck_StarWarsFFG/releases/download/v1.0.2/module.zip"
 }
