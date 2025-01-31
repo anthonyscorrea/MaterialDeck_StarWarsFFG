@@ -1,16 +1,8 @@
-/**
- * This is a template for adding a new gaming system.
- * Edit it to suit your system, for inspiration, look at other system files.
- * Functions that are unused in your system can be left empty, but don't delete the function.
- * 
- * Use the compatibleCore function to get the right value for the Foundry core:
- * return compatibleCore('10.0') ? [value in v10+] : [value pre v10];
- * 
- * Use the compatibleSystem function to get the right value for the gaming system version:
- * return compatibleSystem('1.6.3') ? [value in v1.6.3+] : [value pre v1.6.3];
- */
-
-import { compatibleCore, compatibleSystem } from "../misc.js";
+const data = {
+    moduleId: 'materialdeck-starwarsffg',
+    systemId: 'starwarsffg',
+    systemName: 'Star Wars FFG'
+}
 
 /**
  * Proficiency colors to show if a token is proficient in for example a skill
@@ -24,7 +16,7 @@ const proficiencyColors = {
     5: "#72CCDC" //blue
 }
 
-export class starwarsffg{
+class system {
     conf; //this variable stores the configuration data for the system, set in the constructor
 
     constructor(){
@@ -572,3 +564,16 @@ export class starwarsffg{
         return;
     }
 }
+
+Hooks.once('MaterialDeck_Ready', () => {
+    const moduleData = game.modules.get(data.moduleId);
+
+    game.materialDeck.registerSystem({
+        systemId: data.systemId,
+        moduleId: data.moduleId,
+        systemName: data.systemName,
+        version: moduleData.version,
+        manifest: moduleData.manifest,
+        system
+    });
+});
